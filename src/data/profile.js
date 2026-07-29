@@ -22,7 +22,7 @@ export const profile = {
       image: '/projects/films.png',
       tags: ['HTML', 'CSS', 'JavaScript'],
       url: 'https://hunanyans-films.netlify.app/',
-      github: '#',
+      github: 'https://github.com/Hovsep9266/Hunanyan',
     },
     {
       id: 'forthub',
@@ -30,7 +30,7 @@ export const profile = {
       image: '/projects/forthub.png',
       tags: ['React', 'API'],
       url: 'https://fort-hub.netlify.app',
-      github: '#',
+      github: 'https://github.com/Hovsep9266/fortnite',
     },
     {
       id: 'taskflow',
@@ -38,7 +38,7 @@ export const profile = {
       image: '/projects/taskflow.png',
       tags: ['React', 'LocalStorage'],
       url: 'https://taskflow-the-app.netlify.app/',
-      github: '#',
+      github: 'https://github.com/Hovsep9266/taskflow-the-app',
     },
   ],
 }

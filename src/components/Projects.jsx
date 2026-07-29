@@ -27,7 +27,7 @@ export default function Projects() {
   return (
     <section id="projects" className="section section--projects reveal" ref={revealRef}>
       <h2 className="section__title">
-        <span className="section__number">03.</span> {t.sections.projects}
+        <span className="section__number">04.</span> {t.sections.projects}
       </h2>
       <div className="projects">
         {profile.projects.map((project, index) => (

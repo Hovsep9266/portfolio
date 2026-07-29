@@ -2,7 +2,7 @@ export const translations = {
   ru: {
     meta: {
       title: 'Hovsep Hunanyan — Портфолио',
-      description: 'Персональное портфолио разработчика',
+      description: 'Frontend-разработчик: лендинги и React-приложения. Абовян, Армения.',
     },
     nav: {
       hero: 'Главная',
@@ -15,6 +15,8 @@ export const translations = {
       greeting: 'Привет, я',
       viewProjects: 'Смотреть проекты',
       contact: 'Связаться',
+      downloadCv: 'Скачать CV',
+      offer: 'Делаю лендинги и React-сайты под ключ — быстро, аккуратно, с адаптивной вёрсткой.',
     },
     sections: {
       about: 'Обо мне',
@@ -28,6 +30,7 @@ export const translations = {
       about: [
         'Привет! Я разработчик с фокусом на создание красивых и функциональных интерфейсов.',
         'Люблю чистый код, продуманный UX и постоянно изучаю новые технологии.',
+        'Беру заказы на лендинги, сайты-визитки и небольшие React-приложения.',
       ],
       location: 'Армения, Абовян',
       languagesTitle: 'Языки',
@@ -36,6 +39,15 @@ export const translations = {
         { name: 'Русский', level: 'Свободно' },
         { name: 'Английский', level: 'Начальный' },
       ],
+    },
+    services: {
+      title: 'Услуги',
+      items: [
+        { name: 'Лендинг / визитка', price: 'от $80–150' },
+        { name: 'Многостраничный сайт', price: 'от $200–350' },
+        { name: 'React-приложение', price: 'от $250+' },
+      ],
+      note: 'Цена зависит от объёма, дизайна и сроков. Напишите — оценим задачу.',
     },
     projects: {
       films: {
@@ -51,6 +63,7 @@ export const translations = {
     contact: {
       text: 'Есть интересный проект или просто хотите поздороваться? Напишите — отвечу!',
       button: 'Написать мне',
+      downloadCv: 'Скачать резюме',
     },
     footer: {
       madeWith: 'Сделано с ❤️',
@@ -65,7 +78,7 @@ export const translations = {
   en: {
     meta: {
       title: 'Hovsep Hunanyan — Portfolio',
-      description: 'Personal developer portfolio',
+      description: 'Frontend developer: landing pages and React apps. Abovyan, Armenia.',
     },
     nav: {
       hero: 'Home',
@@ -78,6 +91,8 @@ export const translations = {
       greeting: "Hi, I'm",
       viewProjects: 'View projects',
       contact: 'Get in touch',
+      downloadCv: 'Download CV',
+      offer: 'I build landing pages and React websites end-to-end — clean, responsive, and ready to launch.',
     },
     sections: {
       about: 'About me',
@@ -91,6 +106,7 @@ export const translations = {
       about: [
         "Hi! I'm a developer focused on creating beautiful and functional interfaces.",
         'I love clean code, thoughtful UX, and constantly learning new technologies.',
+        'Available for landing pages, business websites, and small React apps.',
       ],
       location: 'Abovyan, Armenia',
       languagesTitle: 'Languages',
@@ -99,6 +115,15 @@ export const translations = {
         { name: 'Russian', level: 'Fluent' },
         { name: 'English', level: 'Basic' },
       ],
+    },
+    services: {
+      title: 'Services',
+      items: [
+        { name: 'Landing / business site', price: 'from $80–150' },
+        { name: 'Multi-page website', price: 'from $200–350' },
+        { name: 'React application', price: 'from $250+' },
+      ],
+      note: 'Final price depends on scope, design, and timeline. Message me for an estimate.',
     },
     projects: {
       films: {
@@ -114,6 +139,7 @@ export const translations = {
     contact: {
       text: 'Have an interesting project or just want to say hi? Drop me a line — I will reply!',
       button: 'Say hello',
+      downloadCv: 'Download resume',
     },
     footer: {
       madeWith: 'Made with ❤️',

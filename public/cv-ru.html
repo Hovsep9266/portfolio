@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hovsep Hunanyan — CV</title>
+  <style>
+    :root {
+      --text: #1a1a1a;
+      --muted: #555;
+      --line: #ddd;
+      --accent: #0f766e;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font: 15px/1.5 system-ui, -apple-system, Segoe UI, sans-serif;
+      color: var(--text);
+      background: #f3f3f3;
+    }
+    .page {
+      max-width: 800px;
+      margin: 24px auto;
+      padding: 40px 48px;
+      background: #fff;
+      box-shadow: 0 8px 32px rgba(0,0,0,.08);
+    }
+    .toolbar {
+      display: flex;
+      gap: 12px;
+      justify-content: center;
+      margin: 16px auto 0;
+      max-width: 800px;
+      padding: 0 16px 24px;
+    }
+    .toolbar a, .toolbar button {
+      font: 500 14px system-ui, sans-serif;
+      padding: 10px 18px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      background: #fff;
+      cursor: pointer;
+      text-decoration: none;
+      color: var(--text);
+    }
+    .toolbar button.primary {
+      background: var(--accent);
+      border-color: var(--accent);
+      color: #fff;
+    }
+    h1 {
+      margin: 0 0 4px;
+      font-size: 28px;
+      letter-spacing: -0.03em;
+    }
+    .role {
+      margin: 0 0 12px;
+      color: var(--accent);
+      font-weight: 600;
+    }
+    .contacts {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px 16px;
+      margin: 0 0 24px;
+      padding-bottom: 20px;
+      border-bottom: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 13px;
+    }
+    .contacts a { color: var(--muted); }
+    h2 {
+      margin: 22px 0 10px;
+      font-size: 13px;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--accent);
+    }
+    p { margin: 0 0 10px; }
+    ul { margin: 0; padding-left: 18px; }
+    li { margin-bottom: 6px; }
+    .job { margin-bottom: 14px; }
+    .job strong { display: block; }
+    .meta { color: var(--muted); font-size: 13px; margin-bottom: 4px; }
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 8px 24px;
+    }
+    @media print {
+      body { background: #fff; }
+      .toolbar { display: none; }
+      .page { margin: 0; padding: 0; box-shadow: none; max-width: none; }
+    }
+    @media (max-width: 640px) {
+      .page { margin: 0; padding: 24px; box-shadow: none; }
+      .grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <div class="toolbar">
+    <button class="primary" type="button" onclick="window.print()">Скачать PDF / Печать</button>
+    <a href="/">← На сайт</a>
+    <a href="/cv-en.html">English CV</a>
+  </div>
+
+  <main class="page">
+    <h1>Hovsep Hunanyan</h1>
+    <p class="role">Frontend-разработчик</p>
+    <div class="contacts">
+      <span>Абовян, Армения</span>
+      <a href="mailto:hoso9266@gmail.com">hoso9266@gmail.com</a>
+      <a href="https://t.me/+37498259881">Telegram</a>
+      <a href="https://wa.me/37498259881">WhatsApp +374 98 259 881</a>
+      <a href="https://github.com/Hovsep9266">GitHub</a>
+    </div>
+
+    <h2>О себе</h2>
+    <p>
+      Frontend-разработчик. Делаю лендинги, сайты-визитки и веб-приложения на React.
+      Фокус на чистом коде, адаптивной вёрстке и удобном интерфейсе.
+    </p>
+
+    <h2>Услуги и ориентир по цене</h2>
+    <ul>
+      <li><strong>Лендинг / сайт-визитка</strong> — от $80–150</li>
+      <li><strong>Многостраничный сайт</strong> — от $200–350</li>
+      <li><strong>React-приложение</strong> — от $250+</li>
+    </ul>
+    <p style="color:var(--muted);font-size:13px">Итоговая цена зависит от объёма, дизайна и сроков.</p>
+
+    <h2>Навыки</h2>
+    <div class="grid">
+      <ul>
+        <li>HTML, CSS, JavaScript</li>
+        <li>React</li>
+        <li>TypeScript (базовый+)</li>
+      </ul>
+      <ul>
+        <li>Git / GitHub</li>
+        <li>Netlify / деплой</li>
+        <li>Адаптивная вёрстка, API</li>
+      </ul>
+    </div>
+
+    <h2>Проекты</h2>
+    <div class="job">
+      <strong>Hunanyans Films</strong>
+      <div class="meta">HTML · CSS · JavaScript · <a href="https://hunanyans-films.netlify.app/">Demo</a></div>
+      <p>Сайт-каталог фильмов с описаниями и удобной навигацией.</p>
+    </div>
+    <div class="job">
+      <strong>Fort Hub</strong>
+      <div class="meta">React · API · <a href="https://fort-hub.netlify.app/">Demo</a> · <a href="https://github.com/Hovsep9266/fortnite">GitHub</a></div>
+      <p>Фан-проект по Fortnite: косметика, плейлисты и карта на данных API.</p>
+    </div>
+    <div class="job">
+      <strong>TaskFlow</strong>
+      <div class="meta">React · LocalStorage · <a href="https://taskflow-the-app.netlify.app/">Demo</a> · <a href="https://github.com/Hovsep9266/taskflow-the-app">GitHub</a></div>
+      <p>Приложение для задач с проектами и вложенными todo-списками.</p>
+    </div>
+
+    <h2>Языки</h2>
+    <ul>
+      <li>Армянский — родной</li>
+      <li>Русский — свободно</li>
+      <li>Английский — начальный</li>
+    </ul>
+  </main>
+</body>
+</html>

@@ -182,8 +182,17 @@ main {
 .hero__tagline {
   font-size: 18px;
   max-width: 520px;
+  margin: 0 0 12px;
+  line-height: 1.7;
+}
+
+.hero__offer {
+  font-size: 15px;
+  max-width: 540px;
   margin: 0 0 32px;
   line-height: 1.7;
+  color: var(--text);
+  opacity: 0.9;
 }
 
 .hero__actions {
@@ -280,6 +289,18 @@ main {
 }
 
 .btn--outline:hover {
+  background: var(--accent-dim);
+}
+
+.btn--ghost {
+  background: transparent;
+  color: var(--text-heading);
+  border-color: var(--border);
+}
+
+.btn--ghost:hover {
+  border-color: var(--accent);
+  color: var(--accent);
   background: var(--accent-dim);
 }
 
@@ -648,12 +669,57 @@ main {
   line-height: 1.7;
 }
 
-.contact__btn {
+.contact__actions {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
   margin-bottom: 32px;
 }
 
 .contact__social {
   justify-content: center;
+}
+
+/* ── Services ── */
+
+.services {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.services__item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 16px 20px;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+}
+
+.services__name {
+  color: var(--text-heading);
+  font-weight: 500;
+}
+
+.services__price {
+  font-family: var(--mono);
+  font-size: 13px;
+  color: var(--accent);
+  white-space: nowrap;
+}
+
+.services__note {
+  margin: 0;
+  font-size: 14px;
+  color: var(--text);
+  max-width: 560px;
 }
 
 /* ── Footer ── */
