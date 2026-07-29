@@ -1,11 +1,13 @@
 import { profile } from '../data/profile'
 import { useLanguage } from '../i18n/LanguageContext'
+import { useReveal } from '../hooks/useReveal'
 
 export default function Skills() {
   const { t } = useLanguage()
+  const revealRef = useReveal()
 
   return (
-    <section id="skills" className="section">
+    <section id="skills" className="section reveal" ref={revealRef}>
       <h2 className="section__title">
         <span className="section__number">02.</span> {t.sections.skills}
       </h2>
@@ -17,7 +19,7 @@ export default function Skills() {
               <span className="skill__level">{level}%</span>
             </div>
             <div className="skill__bar">
-              <div className="skill__fill" style={{ width: `${level}%` }} />
+              <div className="skill__fill" style={{ '--level': `${level}%` }} />
             </div>
           </div>
         ))}

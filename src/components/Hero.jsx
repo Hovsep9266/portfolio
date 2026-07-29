@@ -11,12 +11,12 @@ export default function Hero() {
 
   return (
     <section id="hero" className="hero">
-      <p className="hero__greeting">{t.hero.greeting}</p>
-      <h1 className="hero__name">{profile.name}</h1>
-      <p className="hero__title">{t.profile.title}</p>
-      <p className="hero__tagline">{t.profile.tagline}</p>
+      <p className="hero__greeting hero-animate" style={{ '--i': 0 }}>{t.hero.greeting}</p>
+      <h1 className="hero__name hero-animate" style={{ '--i': 1 }}>{profile.name}</h1>
+      <p className="hero__title hero-animate" style={{ '--i': 2 }}>{t.profile.title}</p>
+      <p className="hero__tagline hero-animate" style={{ '--i': 3 }}>{t.profile.tagline}</p>
 
-      <div className="hero__actions">
+      <div className="hero__actions hero-animate" style={{ '--i': 4 }}>
         <button type="button" className="btn btn--primary" onClick={() => scrollTo('projects')}>
           {t.hero.viewProjects}
         </button>
@@ -25,7 +25,9 @@ export default function Hero() {
         </button>
       </div>
 
-      <SocialLinks className="hero__social" />
+      <div className="hero-animate" style={{ '--i': 5 }}>
+        <SocialLinks className="hero__social" />
+      </div>
     </section>
   )
 }

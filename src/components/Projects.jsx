@@ -1,5 +1,6 @@
 import { profile } from '../data/profile'
 import { useLanguage } from '../i18n/LanguageContext'
+import { useReveal } from '../hooks/useReveal'
 
 function isLiveUrl(url) {
   return url && url !== '#'
@@ -15,6 +16,7 @@ function ExternalIcon() {
 
 export default function Projects() {
   const { t } = useLanguage()
+  const revealRef = useReveal()
 
   const openProject = (url) => {
     if (isLiveUrl(url)) {
@@ -23,7 +25,7 @@ export default function Projects() {
   }
 
   return (
-    <section id="projects" className="section section--projects">
+    <section id="projects" className="section section--projects reveal" ref={revealRef}>
       <h2 className="section__title">
         <span className="section__number">03.</span> {t.sections.projects}
       </h2>
@@ -36,6 +38,7 @@ export default function Projects() {
               index === 0 && 'project-card--featured',
               isLiveUrl(project.url) && 'project-card--clickable',
             ].filter(Boolean).join(' ')}
+            style={{ '--i': index }}
             onClick={() => openProject(project.url)}
             onKeyDown={(e) => {
               if (isLiveUrl(project.url) && (e.key === 'Enter' || e.key === ' ')) {

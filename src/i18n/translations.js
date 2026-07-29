@@ -30,6 +30,12 @@ export const translations = {
         'Люблю чистый код, продуманный UX и постоянно изучаю новые технологии.',
       ],
       location: 'Армения, Абовян',
+      languagesTitle: 'Языки',
+      languages: [
+        { name: 'Армянский', level: 'Родной' },
+        { name: 'Русский', level: 'Свободно' },
+        { name: 'Английский', level: 'Начальный' },
+      ],
     },
     projects: {
       films: {
@@ -87,6 +93,12 @@ export const translations = {
         'I love clean code, thoughtful UX, and constantly learning new technologies.',
       ],
       location: 'Abovyan, Armenia',
+      languagesTitle: 'Languages',
+      languages: [
+        { name: 'Armenian', level: 'Native' },
+        { name: 'Russian', level: 'Fluent' },
+        { name: 'English', level: 'Basic' },
+      ],
     },
     projects: {
       films: {
