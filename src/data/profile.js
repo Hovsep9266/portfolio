@@ -4,8 +4,6 @@ export const profile = {
   social: [
     { label: 'GitHub', url: 'https://github.com/Hovsep9266', icon: 'github' },
     { label: 'Telegram', url: 'https://t.me/+37498259881', icon: 'telegram' },
-    { label: 'Instagram', url: 'https://instagram.com/_h._hunanyan_', icon: 'instagram' },
-    { label: 'WhatsApp', url: 'https://wa.me/37498259881', icon: 'whatsapp' },
   ],
   skills: [
     { name: 'HTML / CSS', level: 90 },
