@@ -681,47 +681,6 @@ main {
   justify-content: center;
 }
 
-/* ── Services ── */
-
-.services {
-  list-style: none;
-  padding: 0;
-  margin: 0 0 16px;
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-}
-
-.services__item {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 16px;
-  padding: 16px 20px;
-  background: var(--bg-card);
-  border: 1px solid var(--border);
-  border-radius: 12px;
-}
-
-.services__name {
-  color: var(--text-heading);
-  font-weight: 500;
-}
-
-.services__price {
-  font-family: var(--mono);
-  font-size: 13px;
-  color: var(--accent);
-  white-space: nowrap;
-}
-
-.services__note {
-  margin: 0;
-  font-size: 14px;
-  color: var(--text);
-  max-width: 560px;
-}
-
 /* ── Footer ── */
 
 .footer {

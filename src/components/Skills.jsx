@@ -9,7 +9,7 @@ export default function Skills() {
   return (
     <section id="skills" className="section reveal" ref={revealRef}>
       <h2 className="section__title">
-        <span className="section__number">03.</span> {t.sections.skills}
+        <span className="section__number">02.</span> {t.sections.skills}
       </h2>
       <div className="skills">
         {profile.skills.map(({ name, level }) => (

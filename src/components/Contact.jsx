@@ -13,7 +13,7 @@ export default function Contact() {
   return (
     <section id="contact" className="section section--contact reveal" ref={revealRef}>
       <h2 className="section__title">
-        <span className="section__number">05.</span> {t.sections.contact}
+        <span className="section__number">04.</span> {t.sections.contact}
       </h2>
       <p className="contact__text">
         {t.contact.text}
